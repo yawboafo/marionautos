@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Marion Auto - Premium Cars in Ghana | Import from USA',
-  description: 'Buy premium cars in Ghana or import from the USA. Track your delivery, calculate shipping & duty costs. Marion Auto - Your trusted car dealer.',
-  keywords: 'cars Ghana, import cars USA, car dealership Ghana, buy cars Ghana, shipping calculator, duty calculator',
+  title: 'Marion Autos - Premium Active Cars in Ghana | Import from USA or Canada',
+  description: 'Buy premium cars in Ghana or import from the USA or Canada. Track your delivery, calculate shipping & duty costs. Marion Autos - Your trusted car dealer.',
+  keywords: 'cars Ghana, import cars USA, import cars Canada, car dealership Ghana, buy cars Ghana, shipping calculator, duty calculator',
 }
 
 export default function RootLayout({

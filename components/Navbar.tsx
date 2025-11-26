@@ -1,46 +1,63 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Button from './Button'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled ? 'backdrop-blur-xl bg-black/80 border-b border-white/10' : 'bg-transparent'
+    }`}>
       <div className="container-custom">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-accent-500 to-accent-700 rounded-lg flex items-center justify-center">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-neon-purple/50">
               <span className="text-2xl font-bold text-white">M</span>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-neon-blue to-neon-purple opacity-0 group-hover:opacity-50 blur-xl transition-opacity duration-300"></div>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-dark-900">Marion Auto</h1>
-              <p className="text-xs text-dark-600">Premium Cars</p>
+              <h1 className="text-2xl font-bold font-display bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Marion Autos</h1>
+              <p className="text-xs text-neon-cyan font-medium">Premium Active Cars</p>
             </div>
           </Link>
 
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="/cars/ghana" className="text-dark-700 hover:text-accent-600 font-medium transition-colors">
+          <div className="hidden md:flex items-center gap-6">
+            <Link href="/cars/ghana" className="text-white/80 hover:text-neon-cyan font-medium transition-all duration-300 hover:scale-105">
               Buy in Ghana
             </Link>
-            <Link href="/cars/usa" className="text-dark-700 hover:text-accent-600 font-medium transition-colors">
-              Import from USA
+            <Link href="/cars/usa" className="text-white/80 hover:text-neon-purple font-medium transition-all duration-300 hover:scale-105">
+              Import from USA or Canada
             </Link>
-            <Link href="/track" className="text-dark-700 hover:text-accent-600 font-medium transition-colors">
+            <Link href="/track" className="text-white/80 hover:text-neon-pink font-medium transition-all duration-300 hover:scale-105">
               Track Delivery
             </Link>
-            <Link href="/calculator" className="text-dark-700 hover:text-accent-600 font-medium transition-colors">
+            <Link href="/calculator" className="text-white/80 hover:text-neon-orange font-medium transition-all duration-300 hover:scale-105">
               Calculator
             </Link>
             <Link href="/dashboard">
-              <Button variant="primary" size="sm">Dashboard</Button>
+              <Button variant="primary" size="sm">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                Dashboard
+              </Button>
             </Link>
           </div>
 
           <button 
-            className="md:hidden text-dark-700"
+            className="md:hidden text-white p-2 hover:bg-white/10 rounded-xl transition-all"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,21 +72,21 @@ export default function Navbar() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-dark-100">
-          <div className="container-custom py-4 flex flex-col gap-4">
-            <Link href="/cars/ghana" className="text-dark-700 hover:text-accent-600 font-medium py-2">
+        <div className="md:hidden backdrop-blur-xl bg-black/95 border-t border-white/10 animate-slide-up">
+          <div className="container-custom py-6 flex flex-col gap-4">
+            <Link href="/cars/ghana" className="text-white hover:text-neon-cyan font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
               Buy in Ghana
             </Link>
-            <Link href="/cars/usa" className="text-dark-700 hover:text-accent-600 font-medium py-2">
-              Import from USA
+            <Link href="/cars/usa" className="text-white hover:text-neon-purple font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
+              Import from USA or Canada
             </Link>
-            <Link href="/track" className="text-dark-700 hover:text-accent-600 font-medium py-2">
+            <Link href="/track" className="text-white hover:text-neon-pink font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
               Track Delivery
             </Link>
-            <Link href="/calculator" className="text-dark-700 hover:text-accent-600 font-medium py-2">
+            <Link href="/calculator" className="text-white hover:text-neon-orange font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
               Calculator
             </Link>
-            <Link href="/dashboard" className="py-2">
+            <Link href="/dashboard" className="mt-2">
               <Button variant="primary" size="md" className="w-full">Dashboard</Button>
             </Link>
           </div>

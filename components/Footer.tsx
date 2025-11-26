@@ -12,12 +12,12 @@ export default function Footer() {
                 <span className="text-2xl font-bold text-white">M</span>
               </div>
               <div>
-                <h1 className="text-2xl font-bold">Marion Auto</h1>
-                <p className="text-sm text-dark-300">Premium Cars</p>
+                <h1 className="text-2xl font-bold">Marion Autos</h1>
+                <p className="text-sm text-dark-300">Premium Active Cars</p>
               </div>
             </div>
             <p className="text-dark-300 mb-4">
-              Your trusted partner for buying premium cars in Ghana and importing from the USA.
+              Your trusted partner for buying premium cars in Ghana and importing from the USA or Canada.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-accent-500 transition-colors">

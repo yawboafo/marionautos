@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-    --font-clash: 'Clash Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-  }
-
   body {
-    @apply bg-white text-dark-900 antialiased;
+    @apply bg-black text-white antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  * {
+    @apply border-white/10;
   }
 }
 
@@ -19,20 +20,36 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl shadow-2xl hover:bg-white/10 transition-all duration-300;
+  }
+
+  .glass-card-light {
+    @apply backdrop-blur-xl bg-white/80 border border-white/20 rounded-3xl shadow-2xl hover:bg-white/90 transition-all duration-300;
+  }
+
   .btn {
-    @apply inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply inline-flex items-center justify-center rounded-full font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105 active:scale-95;
+  }
+
+  .btn-neon {
+    @apply bg-gradient-to-r from-neon-blue to-neon-purple text-white shadow-lg shadow-neon-purple/50 hover:shadow-2xl hover:shadow-neon-purple/70;
   }
 
   .btn-primary {
-    @apply bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-500 shadow-lg shadow-accent-500/20 hover:shadow-xl hover:shadow-accent-500/30;
+    @apply btn-neon;
+  }
+
+  .btn-gradient {
+    @apply bg-gradient-to-r from-neon-orange to-neon-pink text-white shadow-lg shadow-neon-pink/50 hover:shadow-2xl hover:shadow-neon-pink/70;
   }
 
   .btn-secondary {
-    @apply bg-primary-700 text-white hover:bg-primary-800 focus:ring-primary-700 shadow-lg shadow-primary-700/20 hover:shadow-xl hover:shadow-primary-700/30;
+    @apply btn-gradient;
   }
 
   .btn-outline {
-    @apply border-2 border-primary-700 text-primary-700 hover:bg-primary-700 hover:text-white focus:ring-primary-700;
+    @apply border-2 border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black hover:shadow-lg hover:shadow-neon-cyan/50;
   }
 
   .btn-lg {
@@ -44,35 +61,51 @@
   }
 
   .btn-sm {
-    @apply px-4 py-2 text-sm;
+    @apply px-5 py-2 text-sm;
+  }
+
+  .input-modern {
+    @apply w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-neon-cyan focus:bg-white/10 transition-all backdrop-blur-xl;
   }
 
   .input-field {
-    @apply w-full px-4 py-3 rounded-lg border border-dark-300 bg-white text-dark-900 placeholder:text-dark-400 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all;
+    @apply input-modern;
+  }
+
+  .pill-input {
+    @apply px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-neon-cyan focus:bg-white/10 transition-all backdrop-blur-xl;
+  }
+
+  .select-modern {
+    @apply w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-neon-cyan focus:bg-white/10 transition-all cursor-pointer backdrop-blur-xl;
   }
 
   .select-field {
-    @apply w-full px-4 py-3 rounded-lg border border-dark-300 bg-white text-dark-900 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent transition-all cursor-pointer;
+    @apply select-modern;
   }
 
   .card {
-    @apply bg-white rounded-xl shadow-lg border border-dark-100 hover:shadow-2xl transition-all duration-300;
+    @apply glass-card;
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl font-bold text-dark-900 font-display;
+    @apply text-5xl md:text-7xl font-bold font-display bg-gradient-to-r from-white via-neon-cyan to-neon-purple bg-clip-text text-transparent;
   }
 
   .section-subtitle {
-    @apply text-xl text-dark-600 mt-4;
+    @apply text-xl md:text-2xl text-white/60 mt-4;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-accent-500 to-accent-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink bg-clip-text text-transparent;
   }
 
-  .hero-gradient {
-    @apply bg-gradient-to-br from-primary-900 via-primary-800 to-dark-900;
+  .neon-glow {
+    @apply shadow-lg shadow-neon-cyan/50 hover:shadow-2xl hover:shadow-neon-cyan/70 transition-all duration-300;
+  }
+
+  .gradient-border {
+    @apply relative before:absolute before:inset-0 before:rounded-3xl before:p-[2px] before:bg-gradient-to-r before:from-neon-blue before:via-neon-purple before:to-neon-pink before:-z-10;
   }
 }
 

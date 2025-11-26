@@ -1,6 +1,6 @@
-# Marion Auto - Premium Car Dealership Platform
+# Marion Autos - Premium Active Car Dealership Platform
 
-A modern, ultra-responsive web application for Marion Auto, a Ghana-based car dealership that sells cars locally and internationally.
+A modern, ultra-responsive web application for Marion Autos, a Ghana-based car dealership that sells cars locally and internationally.
 
 ## Features
 

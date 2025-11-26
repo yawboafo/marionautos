@@ -95,10 +95,10 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Premium Cars in Ghana<br />
-              <span className="gradient-text">Import from USA</span>
+              <span className="gradient-text">Import from USA or Canada</span>
             </h1>
             <p className="text-xl md:text-2xl text-dark-200 mb-12 max-w-2xl mx-auto">
-              Buy locally or import your dream car from the USA. Track delivery. Calculate costs. Drive with confidence.
+              Buy locally or import your dream car from the USA or Canada. Track delivery. Calculate costs. Drive with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/cars/ghana">
@@ -108,7 +108,7 @@ export default function Home() {
               </Link>
               <Link href="/cars/usa">
                 <Button variant="secondary" size="lg">
-                  Import from USA
+                  Import from USA or Canada
                 </Button>
               </Link>
             </div>
