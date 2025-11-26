@@ -12,10 +12,10 @@ export default function PrivacyPage() {
         <div className="container-custom max-w-4xl">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-6 py-2 rounded-full glass-card">
-              <span className="text-neon-purple font-medium">🔒 Privacy</span>
+              <span className="text-primary-red font-medium">🔒 Privacy</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
-              <span className="bg-gradient-to-r from-white via-neon-cyan to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-primary-red to-white bg-clip-text text-transparent">
                 Privacy Policy
               </span>
             </h1>
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
             {/* Introduction */}
             <div>
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-cyan to-neon-blue rounded-lg flex items-center justify-center text-sm">📋</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-red to-primary-crimson rounded-lg flex items-center justify-center text-sm">📋</span>
                 Introduction
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
             {/* Section 1 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-purple to-neon-pink rounded-lg flex items-center justify-center text-sm">1</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-silver to-brand-gray rounded-lg flex items-center justify-center text-sm">1</span>
                 Information We Collect
               </h2>
               <div className="text-white/70 leading-relaxed space-y-4">
@@ -83,7 +83,7 @@ export default function PrivacyPage() {
             {/* Section 2 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-pink to-neon-orange rounded-lg flex items-center justify-center text-sm">2</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-lg flex items-center justify-center text-sm">2</span>
                 How We Use Your Information
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
             {/* Section 3 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-orange to-neon-lime rounded-lg flex items-center justify-center text-sm">3</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-gray to-brand-lightgray rounded-lg flex items-center justify-center text-sm">3</span>
                 Information Sharing and Disclosure
               </h2>
               <div className="text-white/70 leading-relaxed space-y-4">
@@ -135,7 +135,7 @@ export default function PrivacyPage() {
                   </p>
                 </div>
                 
-                <p className="font-semibold text-neon-cyan mt-4">
+                <p className="font-semibold text-primary-red mt-4">
                   We do NOT sell your personal information to third parties for their marketing purposes.
                 </p>
               </div>
@@ -144,7 +144,7 @@ export default function PrivacyPage() {
             {/* Section 4 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-lime to-neon-cyan rounded-lg flex items-center justify-center text-sm">4</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-red to-primary-crimson rounded-lg flex items-center justify-center text-sm">4</span>
                 Cookies and Tracking Technologies
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -168,7 +168,7 @@ export default function PrivacyPage() {
             {/* Section 5 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-blue to-neon-purple rounded-lg flex items-center justify-center text-sm">5</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-silver to-brand-gray rounded-lg flex items-center justify-center text-sm">5</span>
                 Data Security
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -182,7 +182,7 @@ export default function PrivacyPage() {
                   <li>Employee training on data protection best practices</li>
                   <li>Strong password requirements and access controls</li>
                 </ul>
-                <p className="text-neon-orange font-semibold">
+                <p className="text-primary-red font-semibold">
                   However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security but continuously work to maintain the highest standards.
                 </p>
               </div>
@@ -191,7 +191,7 @@ export default function PrivacyPage() {
             {/* Section 6 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-pink to-neon-cyan rounded-lg flex items-center justify-center text-sm">6</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-lg flex items-center justify-center text-sm">6</span>
                 Your Privacy Rights
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -205,7 +205,7 @@ export default function PrivacyPage() {
                   <li><strong className="text-white/90">Object:</strong> Object to certain processing of your personal information</li>
                 </ul>
                 <p className="mt-4">
-                  To exercise these rights, please contact us at <span className="text-neon-cyan">privacy@marionautos.com</span>
+                  To exercise these rights, please contact us at <span className="text-primary-red">privacy@marionautos.com</span>
                 </p>
               </div>
             </div>
@@ -213,7 +213,7 @@ export default function PrivacyPage() {
             {/* Section 7 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-orange to-neon-pink rounded-lg flex items-center justify-center text-sm">7</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-gray to-brand-lightgray rounded-lg flex items-center justify-center text-sm">7</span>
                 Data Retention
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -232,7 +232,7 @@ export default function PrivacyPage() {
             {/* Section 8 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-cyan to-neon-lime rounded-lg flex items-center justify-center text-sm">8</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-red to-primary-crimson rounded-lg flex items-center justify-center text-sm">8</span>
                 Children's Privacy
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -248,7 +248,7 @@ export default function PrivacyPage() {
             {/* Section 9 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-purple to-neon-orange rounded-lg flex items-center justify-center text-sm">9</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-silver to-brand-gray rounded-lg flex items-center justify-center text-sm">9</span>
                 International Data Transfers
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -264,7 +264,7 @@ export default function PrivacyPage() {
             {/* Section 10 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-lime to-neon-pink rounded-lg flex items-center justify-center text-sm">10</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-lg flex items-center justify-center text-sm">10</span>
                 Third-Party Links
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -280,7 +280,7 @@ export default function PrivacyPage() {
             {/* Section 11 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-cyan to-neon-purple rounded-lg flex items-center justify-center text-sm">11</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-gray to-brand-lightgray rounded-lg flex items-center justify-center text-sm">11</span>
                 Changes to This Privacy Policy
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -296,7 +296,7 @@ export default function PrivacyPage() {
             {/* Contact */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-pink to-neon-cyan rounded-lg flex items-center justify-center text-sm">✉️</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-red to-primary-crimson rounded-lg flex items-center justify-center text-sm">✉️</span>
                 Contact Us About Privacy
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">

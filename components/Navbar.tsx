@@ -33,33 +33,33 @@ export default function Navbar() {
                 className="object-contain"
                 priority
               />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-neon-blue to-neon-purple opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-300"></div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary-red to-primary-crimson opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-300"></div>
             </div>
             <div>
               <h1 className="text-2xl font-bold font-display bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Marion Autos</h1>
-              <p className="text-xs text-neon-cyan font-medium">Premium Active Cars</p>
+              <p className="text-xs text-primary-red font-medium">Premium Active Cars</p>
             </div>
           </Link>
 
           <div className="hidden md:flex items-center gap-6">
-            <Link href="/cars/ghana" className="text-white/80 hover:text-neon-cyan font-medium transition-all duration-300 hover:scale-105">
+            <Link href="/cars/ghana" className="text-white/80 hover:text-primary-red font-medium transition-all duration-300 hover:scale-105">
               Buy in Ghana
             </Link>
-            <Link href="/cars/usa" className="text-white/80 hover:text-neon-purple font-medium transition-all duration-300 hover:scale-105">
+            <Link href="/cars/usa" className="text-white/80 hover:text-primary-red font-medium transition-all duration-300 hover:scale-105">
               Import from USA or Canada
             </Link>
-            <Link href="/track" className="text-white/80 hover:text-neon-pink font-medium transition-all duration-300 hover:scale-105">
+            <Link href="/track" className="text-white/80 hover:text-primary-red font-medium transition-all duration-300 hover:scale-105">
               Track Delivery
             </Link>
-            <Link href="/calculator" className="text-white/80 hover:text-neon-orange font-medium transition-all duration-300 hover:scale-105">
-              Calculator
+            <Link href="/calculator" className="text-white/80 hover:text-primary-red font-medium transition-all duration-300 hover:scale-105">
+              Duty Calculator
             </Link>
-            <Link href="/dashboard">
+            <Link href="/login">
               <Button variant="primary" size="sm">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
                 </svg>
-                Dashboard
+                Login
               </Button>
             </Link>
           </div>
@@ -82,20 +82,20 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden backdrop-blur-xl bg-black/95 border-t border-white/10 animate-slide-up">
           <div className="container-custom py-6 flex flex-col gap-4">
-            <Link href="/cars/ghana" className="text-white hover:text-neon-cyan font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
+            <Link href="/cars/ghana" className="text-white hover:text-primary-red font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
               Buy in Ghana
             </Link>
-            <Link href="/cars/usa" className="text-white hover:text-neon-purple font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
+            <Link href="/cars/usa" className="text-white hover:text-primary-red font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
               Import from USA or Canada
             </Link>
-            <Link href="/track" className="text-white hover:text-neon-pink font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
+            <Link href="/track" className="text-white hover:text-primary-red font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
               Track Delivery
             </Link>
-            <Link href="/calculator" className="text-white hover:text-neon-orange font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
-              Calculator
+            <Link href="/calculator" className="text-white hover:text-primary-red font-medium py-3 px-4 rounded-xl hover:bg-white/5 transition-all">
+              Duty Calculator
             </Link>
-            <Link href="/dashboard" className="mt-2">
-              <Button variant="primary" size="md" className="w-full">Dashboard</Button>
+            <Link href="/login" className="mt-2">
+              <Button variant="primary" size="md" className="w-full">Login</Button>
             </Link>
           </div>
         </div>

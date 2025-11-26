@@ -16,7 +16,7 @@ const usaCars = [
     location: 'USA',
     transmission: 'Automatic',
     fuel: 'Petrol',
-    image: 'https://images.unsplash.com/photo-1593450227441-7a38c7ce4fc7?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1564694202883-46e7448c1b26?w=800&q=80',
     href: '/cars/usa/1'
   },
   {
@@ -79,6 +79,78 @@ const usaCars = [
     image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80',
     href: '/cars/usa/6'
   },
+  {
+    id: '7',
+    title: 'Chevrolet Camaro SS 2024',
+    year: 2024,
+    price: 44000,
+    mileage: '1,500 miles',
+    location: 'USA',
+    transmission: 'Manual',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1617531653520-bd466c5d2472?w=800&q=80',
+    href: '/cars/usa/7'
+  },
+  {
+    id: '8',
+    title: 'Cadillac Escalade 2023',
+    year: 2023,
+    price: 78000,
+    mileage: '6,000 miles',
+    location: 'USA',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80',
+    href: '/cars/usa/8'
+  },
+  {
+    id: '9',
+    title: 'Ford Mustang GT 2024',
+    year: 2024,
+    price: 47000,
+    mileage: '800 miles',
+    location: 'USA',
+    transmission: 'Manual',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
+    href: '/cars/usa/9'
+  },
+  {
+    id: '10',
+    title: 'Toyota Tacoma 2023',
+    year: 2023,
+    price: 38000,
+    mileage: '12,000 miles',
+    location: 'USA',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80',
+    href: '/cars/usa/10'
+  },
+  {
+    id: '11',
+    title: 'Dodge Charger R/T 2024',
+    year: 2024,
+    price: 45000,
+    mileage: '2,800 miles',
+    location: 'USA',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1606220838315-056192d5e927?w=800&q=80',
+    href: '/cars/usa/11'
+  },
+  {
+    id: '12',
+    title: 'BMW X7 2023',
+    year: 2023,
+    price: 82000,
+    mileage: '9,500 miles',
+    location: 'USA',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80',
+    href: '/cars/usa/12'
+  },
 ]
 
 export default function USACarsPage() {
@@ -101,12 +173,12 @@ export default function USACarsPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-dark-900 mb-4">Import Cars from USA</h1>
           <p className="text-xl text-dark-600 mb-8">Access thousands of premium vehicles from the US market</p>
           
-          <div className="relative glass-card p-8 mb-12 border-2 border-neon-cyan/30 overflow-hidden">
+          <div className="relative glass-card p-8 mb-12 border-2 border-primary-red/30 overflow-hidden">
             {/* Animated background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/10 via-neon-purple/10 to-neon-pink/10 animate-pulse-slow"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-red/10 via-primary-crimson/10 to-brand-silver/10 animate-pulse-slow"></div>
             
             <div className="relative z-10 flex items-start gap-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-neon-cyan to-neon-blue rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-neon-cyan/50">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-red to-primary-crimson rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-primary-red/50">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -114,15 +186,15 @@ export default function USACarsPage() {
               <div>
                 <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2">
                   How Import Works
-                  <span className="text-neon-cyan animate-pulse">✨</span>
+                  <span className="text-primary-red animate-pulse">✨</span>
                 </h3>
                 <div className="text-white/80 text-lg leading-relaxed">
-                  <span className="text-neon-cyan font-semibold">Select a car</span> → 
-                  <span className="text-neon-purple font-semibold"> We calculate total costs</span> (car + shipping + duty) → 
-                  <span className="text-neon-pink font-semibold"> Complete payment</span> → 
-                  <span className="text-neon-orange font-semibold"> We handle shipping & customs</span> → 
-                  <span className="text-neon-lime font-semibold"> Track delivery</span> → 
-                  <span className="text-neon-cyan font-semibold"> Car delivered to Ghana</span> 🚗
+                  <span className="text-primary-red font-semibold">Select a car</span> → 
+                  <span className="text-brand-silver font-semibold"> We calculate total costs</span> (car + shipping + duty) → 
+                  <span className="text-primary-crimson font-semibold"> Complete payment</span> → 
+                  <span className="text-brand-gray font-semibold"> We handle shipping & customs</span> → 
+                  <span className="text-brand-lightgray font-semibold"> Track delivery</span> → 
+                  <span className="text-primary-red font-semibold"> Car delivered to Ghana</span> 🚗
                 </div>
               </div>
             </div>

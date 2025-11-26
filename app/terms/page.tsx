@@ -12,10 +12,10 @@ export default function TermsPage() {
         <div className="container-custom max-w-4xl">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-6 py-2 rounded-full glass-card">
-              <span className="text-neon-cyan font-medium">📜 Legal</span>
+              <span className="text-primary-red font-medium">📜 Legal</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
-              <span className="bg-gradient-to-r from-white via-neon-purple to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-primary-red to-white bg-clip-text text-transparent">
                 Terms & Conditions
               </span>
             </h1>
@@ -28,7 +28,7 @@ export default function TermsPage() {
             {/* Section 1 */}
             <div>
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-cyan to-neon-blue rounded-lg flex items-center justify-center text-sm">1</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-red to-primary-crimson rounded-lg flex items-center justify-center text-sm">1</span>
                 Acceptance of Terms
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -44,7 +44,7 @@ export default function TermsPage() {
             {/* Section 2 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-purple to-neon-pink rounded-lg flex items-center justify-center text-sm">2</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-silver to-brand-gray rounded-lg flex items-center justify-center text-sm">2</span>
                 Vehicle Purchase Terms
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -69,7 +69,7 @@ export default function TermsPage() {
             {/* Section 3 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-pink to-neon-orange rounded-lg flex items-center justify-center text-sm">3</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-lg flex items-center justify-center text-sm">3</span>
                 Pricing and Payment
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -87,7 +87,7 @@ export default function TermsPage() {
             {/* Section 4 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-orange to-neon-lime rounded-lg flex items-center justify-center text-sm">4</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-gray to-brand-lightgray rounded-lg flex items-center justify-center text-sm">4</span>
                 Refund and Cancellation Policy
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -111,7 +111,7 @@ export default function TermsPage() {
             {/* Section 5 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-lime to-neon-cyan rounded-lg flex items-center justify-center text-sm">5</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-red to-primary-crimson rounded-lg flex items-center justify-center text-sm">5</span>
                 Shipping and Delivery
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -129,7 +129,7 @@ export default function TermsPage() {
             {/* Section 6 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-blue to-neon-purple rounded-lg flex items-center justify-center text-sm">6</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-silver to-brand-gray rounded-lg flex items-center justify-center text-sm">6</span>
                 Warranties and Liability
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -146,7 +146,7 @@ export default function TermsPage() {
             {/* Section 7 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-pink to-neon-cyan rounded-lg flex items-center justify-center text-sm">7</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-lg flex items-center justify-center text-sm">7</span>
                 Intellectual Property
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -162,7 +162,7 @@ export default function TermsPage() {
             {/* Section 8 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-orange to-neon-pink rounded-lg flex items-center justify-center text-sm">8</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-gray to-brand-lightgray rounded-lg flex items-center justify-center text-sm">8</span>
                 User Conduct
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -180,7 +180,7 @@ export default function TermsPage() {
             {/* Section 9 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-cyan to-neon-lime rounded-lg flex items-center justify-center text-sm">9</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-red to-primary-crimson rounded-lg flex items-center justify-center text-sm">9</span>
                 Dispute Resolution
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -196,7 +196,7 @@ export default function TermsPage() {
             {/* Section 10 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-purple to-neon-orange rounded-lg flex items-center justify-center text-sm">10</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-brand-silver to-brand-gray rounded-lg flex items-center justify-center text-sm">10</span>
                 Changes to Terms
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">
@@ -212,7 +212,7 @@ export default function TermsPage() {
             {/* Section 11 */}
             <div className="border-t border-white/10 pt-8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                <span className="w-8 h-8 bg-gradient-to-br from-neon-lime to-neon-pink rounded-lg flex items-center justify-center text-sm">11</span>
+                <span className="w-8 h-8 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-lg flex items-center justify-center text-sm">11</span>
                 Contact Information
               </h2>
               <div className="text-white/70 leading-relaxed space-y-3">

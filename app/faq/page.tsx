@@ -99,10 +99,10 @@ export default function FAQPage() {
         <div className="container-custom max-w-4xl">
           <div className="text-center mb-20">
             <div className="inline-block mb-4 px-6 py-2 rounded-full glass-card">
-              <span className="text-neon-cyan font-medium">💬 Got Questions?</span>
+              <span className="text-primary-red font-medium">💬 Got Questions?</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
-              <span className="bg-gradient-to-r from-white via-neon-purple to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-primary-red to-white bg-clip-text text-transparent">
                 Frequently Asked Questions
               </span>
             </h1>
@@ -114,7 +114,7 @@ export default function FAQPage() {
           {faqs.map((category, categoryIndex) => (
             <div key={categoryIndex} className="mb-12">
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-neon-cyan"></span>
+                <span className="w-2 h-2 rounded-full bg-primary-red"></span>
                 {category.category}
               </h2>
               <div className="space-y-4">
@@ -129,7 +129,7 @@ export default function FAQPage() {
                       >
                         <span className="text-lg font-semibold text-white pr-4">{faq.q}</span>
                         <svg
-                          className={`w-6 h-6 text-neon-cyan flex-shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                          className={`w-6 h-6 text-primary-red flex-shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`}
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"

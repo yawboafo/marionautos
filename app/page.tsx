@@ -66,7 +66,7 @@ const usaCars = [
     location: 'USA',
     transmission: 'Automatic',
     fuel: 'Petrol',
-    image: 'https://images.unsplash.com/photo-1593450227441-7a38c7ce4fc7?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1564694202883-46e7448c1b26?w=800&q=80',
     href: '/cars/usa/5'
   },
   {
@@ -81,6 +81,30 @@ const usaCars = [
     image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80',
     href: '/cars/usa/6'
   },
+  {
+    id: '7',
+    title: 'Tesla Model 3 2024',
+    year: 2024,
+    price: 48000,
+    mileage: '1,200 miles',
+    location: 'USA',
+    transmission: 'Automatic',
+    fuel: 'Electric',
+    image: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800&q=80',
+    href: '/cars/usa/7'
+  },
+  {
+    id: '8',
+    title: 'Ram 1500 2023',
+    year: 2023,
+    price: 46000,
+    mileage: '5,000 miles',
+    location: 'USA',
+    transmission: 'Automatic',
+    fuel: 'Diesel',
+    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80',
+    href: '/cars/usa/8'
+  },
 ]
 
 export default function Home() {
@@ -90,23 +114,23 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-radial from-neon-purple/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-radial from-primary-red/20 via-transparent to-transparent"></div>
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-neon-blue/20 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-neon-purple/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-neon-pink/10 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary-red/20 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-crimson/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-brand-silver/10 rounded-full blur-3xl animate-pulse-slow"></div>
         </div>
         <div className="container-custom relative z-10 py-20">
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-block mb-6 px-6 py-2 rounded-full glass-card animate-fade-in">
-              <span className="text-neon-cyan font-medium">🚗 Premium Active Cars</span>
+              <span className="text-primary-red font-medium">🚗 Premium Active Cars</span>
             </div>
             <h1 className="text-6xl md:text-8xl font-display font-bold mb-8 leading-tight animate-slide-up">
               <span className="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
                 Premium Cars in Ghana
               </span>
               <br />
-              <span className="bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent animate-shimmer">
+              <span className="bg-gradient-to-r from-primary-red via-primary-crimson to-brand-silver bg-clip-text text-transparent animate-shimmer">
                 Import from USA or Canada
               </span>
             </h1>
@@ -152,9 +176,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link href="/cars/ghana" className="group">
               <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300 cursor-pointer relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-red/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-neon-cyan to-neon-blue rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-cyan/30">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary-red to-primary-crimson rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-primary-red/30">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
@@ -167,9 +191,9 @@ export default function Home() {
 
             <Link href="/cars/usa" className="group">
               <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300 cursor-pointer relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-silver/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-pink rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-purple/30">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brand-silver to-brand-gray rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-brand-silver/30">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -182,9 +206,9 @@ export default function Home() {
 
             <Link href="/track" className="group">
               <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300 cursor-pointer relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-pink/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-crimson/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-neon-pink to-neon-orange rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-pink/30">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-primary-crimson/30">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                     </svg>
@@ -197,9 +221,9 @@ export default function Home() {
 
             <Link href="/calculator" className="group">
               <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300 cursor-pointer relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-gray/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-neon-orange to-neon-lime rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-orange/30">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brand-gray to-brand-lightgray rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-brand-gray/30">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
@@ -272,7 +296,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="glass-card p-8 text-center group hover:scale-105 transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-neon-cyan to-neon-blue rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-cyan/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-primary-red to-primary-crimson rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-primary-red/30">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -281,7 +305,7 @@ export default function Home() {
               <p className="text-white/60">Every car is thoroughly inspected and verified before listing</p>
             </div>
             <div className="glass-card p-8 text-center group hover:scale-105 transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-neon-purple to-neon-pink rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-purple/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-brand-silver to-brand-gray rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-brand-silver/30">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -290,7 +314,7 @@ export default function Home() {
               <p className="text-white/60">No hidden fees. Calculate all costs upfront with our calculator</p>
             </div>
             <div className="glass-card p-8 text-center group hover:scale-105 transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-neon-orange to-neon-lime rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-orange/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-primary-crimson/30">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -304,13 +328,13 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/20 via-neon-purple/20 to-neon-pink/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-red/20 via-primary-crimson/20 to-brand-silver/20"></div>
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-neon-blue/30 rounded-full blur-3xl animate-pulse-slow"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-neon-purple/30 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-red/30 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-crimson/30 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '1s'}}></div>
         </div>
         <div className="container-custom text-center relative z-10">
-          <h2 className="text-5xl md:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-white via-neon-cyan to-white bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-white via-primary-red to-white bg-clip-text text-transparent">
             Ready to Get Your Dream Car?
           </h2>
           <p className="text-xl md:text-2xl text-white/70 mb-12 max-w-3xl mx-auto">

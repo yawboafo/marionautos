@@ -33,7 +33,7 @@
   }
 
   .btn-neon {
-    @apply bg-gradient-to-r from-neon-blue to-neon-purple text-white shadow-lg shadow-neon-purple/50 hover:shadow-2xl hover:shadow-neon-purple/70;
+    @apply bg-gradient-to-r from-primary-red to-primary-crimson text-white shadow-lg shadow-primary-red/50 hover:shadow-2xl hover:shadow-primary-red/70;
   }
 
   .btn-primary {
@@ -41,7 +41,7 @@
   }
 
   .btn-gradient {
-    @apply bg-gradient-to-r from-neon-orange to-neon-pink text-white shadow-lg shadow-neon-pink/50 hover:shadow-2xl hover:shadow-neon-pink/70;
+    @apply bg-gradient-to-r from-primary-crimson to-primary-dark text-white shadow-lg shadow-primary-crimson/50 hover:shadow-2xl hover:shadow-primary-crimson/70;
   }
 
   .btn-secondary {
@@ -49,7 +49,7 @@
   }
 
   .btn-outline {
-    @apply border-2 border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black hover:shadow-lg hover:shadow-neon-cyan/50;
+    @apply border-2 border-primary-red text-primary-red hover:bg-primary-red hover:text-white hover:shadow-lg hover:shadow-primary-red/50;
   }
 
   .btn-lg {
@@ -65,7 +65,7 @@
   }
 
   .input-modern {
-    @apply w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-neon-cyan focus:bg-white/10 transition-all backdrop-blur-xl;
+    @apply w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-primary-red focus:bg-white/10 transition-all backdrop-blur-xl;
   }
 
   .input-field {
@@ -73,11 +73,11 @@
   }
 
   .pill-input {
-    @apply px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-neon-cyan focus:bg-white/10 transition-all backdrop-blur-xl;
+    @apply px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-primary-red focus:bg-white/10 transition-all backdrop-blur-xl;
   }
 
   .select-modern {
-    @apply w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-neon-cyan focus:bg-white/10 transition-all cursor-pointer backdrop-blur-xl;
+    @apply w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-primary-red focus:bg-white/10 transition-all cursor-pointer backdrop-blur-xl;
   }
 
   .select-field {
@@ -89,7 +89,7 @@
   }
 
   .section-title {
-    @apply text-5xl md:text-7xl font-bold font-display bg-gradient-to-r from-white via-neon-cyan to-neon-purple bg-clip-text text-transparent;
+    @apply text-5xl md:text-7xl font-bold font-display bg-gradient-to-r from-white via-primary-red to-brand-silver bg-clip-text text-transparent;
   }
 
   .section-subtitle {
@@ -97,15 +97,15 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-red via-primary-crimson to-brand-silver bg-clip-text text-transparent;
   }
 
   .neon-glow {
-    @apply shadow-lg shadow-neon-cyan/50 hover:shadow-2xl hover:shadow-neon-cyan/70 transition-all duration-300;
+    @apply shadow-lg shadow-primary-red/50 hover:shadow-2xl hover:shadow-primary-red/70 transition-all duration-300;
   }
 
   .gradient-border {
-    @apply relative before:absolute before:inset-0 before:rounded-3xl before:p-[2px] before:bg-gradient-to-r before:from-neon-blue before:via-neon-purple before:to-neon-pink before:-z-10;
+    @apply relative before:absolute before:inset-0 before:rounded-3xl before:p-[2px] before:bg-gradient-to-r before:from-primary-red before:via-primary-crimson before:to-brand-silver before:-z-10;
   }
 }
 

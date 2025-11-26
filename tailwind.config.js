@@ -9,13 +9,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        neon: {
-          blue: '#00f0ff',
-          purple: '#b026ff',
-          pink: '#ff006e',
-          cyan: '#00ffff',
-          lime: '#ccff00',
-          orange: '#ff6b00',
+        primary: {
+          red: '#DC143C',
+          crimson: '#C41E3A',
+          dark: '#A01728',
+        },
+        brand: {
+          black: '#000000',
+          silver: '#C0C0C0',
+          gray: '#B8B8B8',
+          lightgray: '#D3D3D3',
         },
         glass: {
           white: 'rgba(255, 255, 255, 0.1)',

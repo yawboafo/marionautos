@@ -103,6 +103,114 @@ const ghanaCars = [
     image: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?w=800&q=80',
     href: '/cars/ghana/8'
   },
+  {
+    id: '9',
+    title: 'Lexus RX 350 2023',
+    year: 2023,
+    price: 58000,
+    mileage: '9,000 km',
+    location: 'Accra',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80',
+    href: '/cars/ghana/9'
+  },
+  {
+    id: '10',
+    title: 'Range Rover Evoque 2022',
+    year: 2022,
+    price: 52000,
+    mileage: '20,000 km',
+    location: 'Kumasi',
+    transmission: 'Automatic',
+    fuel: 'Diesel',
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80',
+    href: '/cars/ghana/10'
+  },
+  {
+    id: '11',
+    title: 'Hyundai Tucson 2024',
+    year: 2024,
+    price: 29000,
+    mileage: '4,500 km',
+    location: 'Accra',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80',
+    href: '/cars/ghana/11'
+  },
+  {
+    id: '12',
+    title: 'Volkswagen Tiguan 2023',
+    year: 2023,
+    price: 34000,
+    mileage: '11,000 km',
+    location: 'Kumasi',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80',
+    href: '/cars/ghana/12'
+  },
+  {
+    id: '13',
+    title: 'Mazda CX-5 2024',
+    year: 2024,
+    price: 31000,
+    mileage: '2,800 km',
+    location: 'Accra',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80',
+    href: '/cars/ghana/13'
+  },
+  {
+    id: '14',
+    title: 'Ford Explorer 2023',
+    year: 2023,
+    price: 42000,
+    mileage: '13,500 km',
+    location: 'Accra',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80',
+    href: '/cars/ghana/14'
+  },
+  {
+    id: '15',
+    title: 'Kia Sportage 2024',
+    year: 2024,
+    price: 28000,
+    mileage: '5,200 km',
+    location: 'Kumasi',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80',
+    href: '/cars/ghana/15'
+  },
+  {
+    id: '16',
+    title: 'Chevrolet Traverse 2023',
+    year: 2023,
+    price: 38000,
+    mileage: '14,000 km',
+    location: 'Accra',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80',
+    href: '/cars/ghana/16'
+  },
+  {
+    id: '17',
+    title: 'Jeep Wrangler 2023',
+    year: 2023,
+    price: 48000,
+    mileage: '16,000 km',
+    location: 'Kumasi',
+    transmission: 'Automatic',
+    fuel: 'Petrol',
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80',
+    href: '/cars/ghana/17'
+  },
 ]
 
 export default function GhanaCarsPage() {
@@ -120,7 +228,7 @@ export default function GhanaCarsPage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-6 py-2 rounded-full glass-card">
-              <span className="text-neon-cyan font-medium">🇬🇭 Local Inventory</span>
+              <span className="text-primary-red font-medium">🇬🇭 Local Inventory</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
               <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
@@ -180,7 +288,7 @@ export default function GhanaCarsPage() {
 
           {/* Results Count */}
           <div className="mb-8 flex justify-between items-center">
-            <p className="text-white/60">Showing <span className="text-neon-cyan font-semibold">{ghanaCars.length}</span> vehicles</p>
+            <p className="text-white/60">Showing <span className="text-primary-red font-semibold">{ghanaCars.length}</span> vehicles</p>
             <select className="input-modern w-auto">
               <option>Sort by: Featured</option>
               <option>Price: Low to High</option>

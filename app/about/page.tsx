@@ -12,15 +12,15 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="text-center mb-20">
             <div className="inline-block mb-4 px-6 py-2 rounded-full glass-card">
-              <span className="text-neon-cyan font-medium">About Marion Autos</span>
+              <span className="text-primary-red font-medium">About Marion Auto</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
-              <span className="bg-gradient-to-r from-white via-neon-cyan to-white bg-clip-text text-transparent">
-                Your Trusted Partner
+              <span className="bg-gradient-to-r from-white via-primary-red to-white bg-clip-text text-transparent">
+                Driving Dreams, Delivering Excellence
               </span>
             </h1>
             <p className="text-xl text-white/60 max-w-3xl mx-auto">
-              Leading Ghana's premium automotive market with integrity, transparency, and exceptional service since our inception
+              A premier Ghanaian international auto dealership connecting car enthusiasts with quality vehicles from around the world
             </p>
           </div>
 
@@ -30,20 +30,23 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold text-white mb-6">Our Story</h2>
               <div className="space-y-4 text-white/70 leading-relaxed">
                 <p>
-                  Marion Autos was founded with a simple mission: to revolutionize the car buying experience in Ghana by combining local expertise with global reach.
+                  Marion Auto is a premier Ghanaian international auto dealership, proudly owned by Samuel Ankrah. We specialize in connecting car enthusiasts and buyers in Ghana with a wide range of quality vehicles from around the world.
                 </p>
                 <p>
-                  We recognized that Ghanaians deserved access to premium vehicles without the complexity and uncertainty that often comes with international imports. Our team of automotive experts works tirelessly to ensure every vehicle meets our stringent quality standards.
+                  Whether you're looking to import a car from the United States or explore options locally, Marion Auto makes the process seamless, transparent, and reliable. Our mission is to provide a trusted, customer-focused experience for everyone, ensuring that each vehicle meets the highest standards of quality and value.
                 </p>
                 <p>
-                  Today, we're proud to be Ghana's most trusted automotive platform, serving thousands of satisfied customers across the nation.
+                  From handling shipping logistics and duty calculations to providing guidance on every step of your car purchase, we are dedicated to making car ownership a reality for our clients.
+                </p>
+                <p>
+                  At Marion Auto, we believe in more than just selling cars—we build relationships. We are committed to serving our community and clients with integrity, professionalism, and passion for automobiles.
                 </p>
               </div>
             </div>
             <div className="relative h-[500px] rounded-3xl overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1562911791-c7a97b729ec5?w=800&q=80" 
-                alt="About Marion Autos"
+                src="/mario.jpg" 
+                alt="Samuel Ankrah - Marion Auto Owner"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -58,7 +61,7 @@ export default function AboutPage() {
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="glass-card p-8 text-center group hover:scale-105 transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-br from-neon-cyan to-neon-blue rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-cyan/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-red to-primary-crimson rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-primary-red/30">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
@@ -67,7 +70,7 @@ export default function AboutPage() {
                 <p className="text-white/60">Honest and transparent in every transaction</p>
               </div>
               <div className="glass-card p-8 text-center group hover:scale-105 transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-pink rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-purple/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-silver to-brand-gray rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-brand-silver/30">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                   </svg>
@@ -76,7 +79,7 @@ export default function AboutPage() {
                 <p className="text-white/60">Committed to premium quality in everything we deliver</p>
               </div>
               <div className="glass-card p-8 text-center group hover:scale-105 transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-br from-neon-orange to-neon-lime rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-neon-orange/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-crimson to-primary-dark rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-primary-crimson/30">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
@@ -91,19 +94,19 @@ export default function AboutPage() {
           <div className="glass-card p-12 mb-32">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-neon-cyan to-neon-blue bg-clip-text text-transparent mb-2">500+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-red to-primary-crimson bg-clip-text text-transparent mb-2">500+</div>
                 <div className="text-white/60">Cars Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-neon-purple to-neon-pink bg-clip-text text-transparent mb-2">98%</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-brand-silver to-brand-gray bg-clip-text text-transparent mb-2">98%</div>
                 <div className="text-white/60">Satisfaction Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-neon-pink to-neon-orange bg-clip-text text-transparent mb-2">24/7</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-crimson to-primary-dark bg-clip-text text-transparent mb-2">24/7</div>
                 <div className="text-white/60">Customer Support</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-neon-orange to-neon-lime bg-clip-text text-transparent mb-2">5+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-brand-gray to-brand-lightgray bg-clip-text text-transparent mb-2">5+</div>
                 <div className="text-white/60">Years Experience</div>
               </div>
             </div>
