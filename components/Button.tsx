@@ -13,16 +13,18 @@ export default function Button({
   className = '',
   ...props 
 }: ButtonProps) {
-  const baseClasses = 'btn'
+  const baseClasses = 'font-semibold rounded-2xl transition-all duration-300 flex items-center justify-center gap-2'
+  
   const variantClasses = {
-    primary: 'btn-primary',
-    secondary: 'btn-secondary',
-    outline: 'btn-outline'
+    primary: 'btn-neon',
+    secondary: 'bg-white/10 backdrop-blur-xl border border-white/20 text-white hover:bg-white/20 hover:scale-105',
+    outline: 'bg-transparent border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 hover:scale-105'
   }
+  
   const sizeClasses = {
-    sm: 'btn-sm',
-    md: 'btn-md',
-    lg: 'btn-lg'
+    sm: 'px-4 py-2 text-sm',
+    md: 'px-6 py-3 text-base',
+    lg: 'px-8 py-4 text-lg'
   }
 
   return (

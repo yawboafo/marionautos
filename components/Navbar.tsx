@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Button from './Button'
 
 export default function Navbar() {
@@ -23,9 +24,16 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-neon-purple/50">
-              <span className="text-2xl font-bold text-white">M</span>
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-neon-blue to-neon-purple opacity-0 group-hover:opacity-50 blur-xl transition-opacity duration-300"></div>
+            <div className="relative w-12 h-12 transform group-hover:scale-110 transition-transform duration-300">
+              <Image 
+                src="/logo.png" 
+                alt="Marion Autos Logo" 
+                width={48} 
+                height={48} 
+                className="object-contain"
+                priority
+              />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-neon-blue to-neon-purple opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-300"></div>
             </div>
             <div>
               <h1 className="text-2xl font-bold font-display bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Marion Autos</h1>

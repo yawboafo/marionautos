@@ -113,20 +113,31 @@ export default function GhanaCarsPage() {
   })
 
   return (
-    <main>
+    <main className="bg-black min-h-screen">
       <Navbar />
       
-      <section className="py-12 bg-dark-50">
+      <section className="pt-32 pb-20">
         <div className="container-custom">
-          <h1 className="text-4xl md:text-5xl font-bold text-dark-900 mb-4">Cars Available in Ghana</h1>
-          <p className="text-xl text-dark-600 mb-8">Browse our premium selection of locally available vehicles</p>
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4 px-6 py-2 rounded-full glass-card">
+              <span className="text-neon-cyan font-medium">🇬🇭 Local Inventory</span>
+            </div>
+            <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
+              <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
+                Cars Available in Ghana
+              </span>
+            </h1>
+            <p className="text-xl text-white/60 max-w-2xl mx-auto">
+              Browse our premium selection of locally available vehicles ready for immediate delivery
+            </p>
+          </div>
           
           {/* Filters */}
-          <div className="bg-white rounded-xl shadow-lg p-6 mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="glass-card p-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div>
-                <label className="block text-sm font-medium text-dark-700 mb-2">Make</label>
-                <select className="select-field" value={filters.make} onChange={(e) => setFilters({...filters, make: e.target.value})}>
+                <label className="block text-sm font-medium text-white/80 mb-2">Make</label>
+                <select className="input-modern" value={filters.make} onChange={(e) => setFilters({...filters, make: e.target.value})}>
                   <option value="">All Makes</option>
                   <option value="toyota">Toyota</option>
                   <option value="honda">Honda</option>
@@ -137,8 +148,8 @@ export default function GhanaCarsPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-dark-700 mb-2">Price Range</label>
-                <select className="select-field" value={filters.priceRange} onChange={(e) => setFilters({...filters, priceRange: e.target.value})}>
+                <label className="block text-sm font-medium text-white/80 mb-2">Price Range</label>
+                <select className="input-modern" value={filters.priceRange} onChange={(e) => setFilters({...filters, priceRange: e.target.value})}>
                   <option value="">All Prices</option>
                   <option value="0-30000">$0 - $30,000</option>
                   <option value="30000-50000">$30,000 - $50,000</option>
@@ -147,8 +158,8 @@ export default function GhanaCarsPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-dark-700 mb-2">Year</label>
-                <select className="select-field" value={filters.year} onChange={(e) => setFilters({...filters, year: e.target.value})}>
+                <label className="block text-sm font-medium text-white/80 mb-2">Year</label>
+                <select className="input-modern" value={filters.year} onChange={(e) => setFilters({...filters, year: e.target.value})}>
                   <option value="">All Years</option>
                   <option value="2024">2024</option>
                   <option value="2023">2023</option>
@@ -157,25 +168,49 @@ export default function GhanaCarsPage() {
                 </select>
               </div>
               <div className="flex items-end">
-                <Button variant="primary" size="md" className="w-full">Apply Filters</Button>
+                <Button variant="primary" size="md" className="w-full">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                  </svg>
+                  Apply Filters
+                </Button>
               </div>
             </div>
           </div>
 
+          {/* Results Count */}
+          <div className="mb-8 flex justify-between items-center">
+            <p className="text-white/60">Showing <span className="text-neon-cyan font-semibold">{ghanaCars.length}</span> vehicles</p>
+            <select className="input-modern w-auto">
+              <option>Sort by: Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Year: Newest First</option>
+            </select>
+          </div>
+
           {/* Car Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {ghanaCars.map(car => (
               <CarCard key={car.id} {...car} />
             ))}
           </div>
 
           {/* Pagination */}
-          <div className="mt-12 flex justify-center gap-2">
-            <Button variant="outline" size="sm">Previous</Button>
+          <div className="flex justify-center items-center gap-3">
+            <Button variant="outline" size="sm">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </Button>
             <Button variant="primary" size="sm">1</Button>
             <Button variant="outline" size="sm">2</Button>
             <Button variant="outline" size="sm">3</Button>
-            <Button variant="outline" size="sm">Next</Button>
+            <Button variant="outline" size="sm">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Button>
           </div>
         </div>
       </section>

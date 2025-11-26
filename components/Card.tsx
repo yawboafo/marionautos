@@ -42,63 +42,68 @@ export function CarCard({
   href 
 }: CarCardProps) {
   return (
-    <Link href={href}>
-      <Card className="overflow-hidden">
-        <div className="relative h-56 overflow-hidden bg-dark-100">
+    <Link href={href} className="group">
+      <div className="glass-card overflow-hidden hover:scale-105 transition-all duration-300 relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/5 to-neon-purple/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+        <div className="relative h-56 overflow-hidden bg-black/40">
           <img 
             src={image} 
             alt={title}
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <div className="absolute top-4 right-4 bg-accent-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+          <div className="absolute top-4 right-4 bg-gradient-to-r from-neon-cyan to-neon-blue text-white px-4 py-1.5 rounded-full text-sm font-semibold shadow-lg shadow-neon-cyan/30">
             {year}
           </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
         </div>
-        <div className="p-6">
-          <h3 className="text-xl font-bold text-dark-900 mb-2">{title}</h3>
-          <p className="text-2xl font-bold text-accent-500 mb-4">
+        <div className="p-6 relative">
+          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors">{title}</h3>
+          <p className="text-3xl font-bold bg-gradient-to-r from-neon-cyan to-neon-blue bg-clip-text text-transparent mb-4">
             ${price.toLocaleString()}
           </p>
-          <div className="grid grid-cols-2 gap-4 text-sm text-dark-600 mb-4">
+          <div className="grid grid-cols-2 gap-3 text-sm text-white/60 mb-4">
             {mileage && (
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-neon-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
-                {mileage}
+                <span>{mileage}</span>
               </div>
             )}
             {transmission && (
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                 </svg>
-                {transmission}
+                <span>{transmission}</span>
               </div>
             )}
             {fuel && (
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-neon-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                 </svg>
-                {fuel}
+                <span>{fuel}</span>
               </div>
             )}
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-neon-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              {location}
+              <span>{location}</span>
             </div>
           </div>
-          <div className="pt-4 border-t border-dark-100">
-            <span className="text-accent-600 font-semibold hover:text-accent-700 transition-colors">
-              View Details →
+          <div className="pt-4 border-t border-white/10 flex items-center justify-between">
+            <span className="text-neon-cyan font-semibold group-hover:text-white transition-colors flex items-center gap-2">
+              View Details
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </span>
           </div>
         </div>
-      </Card>
+      </div>
     </Link>
   )
 }
