@@ -199,11 +199,11 @@ export default function ShippingPage() {
                     </td>
                     <td className="px-6 py-4">
                       <p className="text-white/80 text-sm">
-                        {activeTab === 'active' ? shipment.eta : shipment.deliveredDate}
+                        {activeTab === 'active' ? ('eta' in shipment ? shipment.eta : '') : ('deliveredDate' in shipment ? shipment.deliveredDate : '')}
                       </p>
                     </td>
                     <td className="px-6 py-4">
-                      <p className="text-white/80 text-sm font-mono">{shipment.tracking || '-'}</p>
+                      <p className="text-white/80 text-sm font-mono">{'tracking' in shipment ? shipment.tracking : '-'}</p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex items-center justify-end gap-2">
