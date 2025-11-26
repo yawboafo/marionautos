@@ -85,31 +85,50 @@ const usaCars = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-black">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20 md:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Premium Cars in Ghana<br />
-              <span className="gradient-text">Import from USA or Canada</span>
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div className="absolute inset-0 bg-gradient-radial from-neon-purple/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-96 h-96 bg-neon-blue/20 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-neon-purple/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-neon-pink/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        </div>
+        <div className="container-custom relative z-10 py-20">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="inline-block mb-6 px-6 py-2 rounded-full glass-card animate-fade-in">
+              <span className="text-neon-cyan font-medium">🚗 Premium Active Cars</span>
+            </div>
+            <h1 className="text-6xl md:text-8xl font-display font-bold mb-8 leading-tight animate-slide-up">
+              <span className="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
+                Premium Cars in Ghana
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent animate-shimmer">
+                Import from USA or Canada
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl text-dark-200 mb-12 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/70 mb-12 max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
               Buy locally or import your dream car from the USA or Canada. Track delivery. Calculate costs. Drive with confidence.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{animationDelay: '0.4s'}}>
               <Link href="/cars/ghana">
-                <Button variant="primary" size="lg">
+                <Button variant="primary" size="lg" className="group">
+                  <svg className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                   Browse Cars in Ghana
                 </Button>
               </Link>
               <Link href="/cars/usa">
-                <Button variant="secondary" size="lg">
+                <button className="px-8 py-4 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 text-white font-semibold hover:bg-white/20 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   Import from USA or Canada
-                </Button>
+                </button>
               </Link>
             </div>
           </div>

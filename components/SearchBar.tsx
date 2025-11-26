@@ -34,12 +34,12 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-2xl p-6 md:p-8">
+    <form onSubmit={handleSubmit} className="glass-card p-6 md:p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
         <div>
-          <label className="block text-sm font-medium text-dark-700 mb-2">Make</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">Make</label>
           <select 
-            className="select-field"
+            className="input-modern"
             value={filters.make}
             onChange={(e) => setFilters({...filters, make: e.target.value})}
           >
@@ -56,10 +56,10 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-dark-700 mb-2">Model</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">Model</label>
           <input 
             type="text"
-            className="input-field"
+            className="input-modern"
             placeholder="Any Model"
             value={filters.model}
             onChange={(e) => setFilters({...filters, model: e.target.value})}
@@ -67,9 +67,9 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-dark-700 mb-2">Year From</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">Year From</label>
           <select 
-            className="select-field"
+            className="input-modern"
             value={filters.yearFrom}
             onChange={(e) => setFilters({...filters, yearFrom: e.target.value})}
           >
@@ -81,9 +81,9 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-dark-700 mb-2">Year To</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">Year To</label>
           <select 
-            className="select-field"
+            className="input-modern"
             value={filters.yearTo}
             onChange={(e) => setFilters({...filters, yearTo: e.target.value})}
           >
@@ -95,10 +95,10 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-dark-700 mb-2">Price From</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">Price From</label>
           <input 
             type="number"
-            className="input-field"
+            className="input-modern"
             placeholder="Min Price"
             value={filters.priceFrom}
             onChange={(e) => setFilters({...filters, priceFrom: e.target.value})}
@@ -106,10 +106,10 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-dark-700 mb-2">Price To</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">Price To</label>
           <input 
             type="number"
-            className="input-field"
+            className="input-modern"
             placeholder="Max Price"
             value={filters.priceTo}
             onChange={(e) => setFilters({...filters, priceTo: e.target.value})}
