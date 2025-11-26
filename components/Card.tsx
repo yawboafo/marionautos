@@ -23,6 +23,7 @@ interface CarCardProps {
   title: string
   year: number
   price: number
+  currency?: string
   mileage?: string
   location: string
   transmission?: string
@@ -35,6 +36,7 @@ export function CarCard({
   title, 
   year, 
   price, 
+  currency = 'USD',
   mileage, 
   location, 
   transmission, 
@@ -59,7 +61,7 @@ export function CarCard({
         <div className="p-6 relative">
           <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-red transition-colors">{title}</h3>
           <p className="text-3xl font-bold bg-gradient-to-r from-primary-red to-primary-crimson bg-clip-text text-transparent mb-4">
-            ${price.toLocaleString()}
+            {currency === 'GHS' ? '₵' : '$'}{price.toLocaleString()}
           </p>
           <div className="grid grid-cols-2 gap-3 text-sm text-white/60 mb-4">
             {mileage && (
