@@ -23,8 +23,48 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </head>
-      <body className="antialiased">
-        {children}
+      <body className="antialiased" style={{
+        margin: 0,
+        padding: 0,
+        minHeight: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#000',
+        fontFamily: 'Inter, sans-serif'
+      }}>
+        <div style={{
+          textAlign: 'center',
+          color: '#fff',
+          padding: '20px'
+        }}>
+          <h1 style={{
+            fontSize: '3rem',
+            fontWeight: '700',
+            marginBottom: '1rem',
+            color: '#DC143C'
+          }}>
+            Under Construction
+          </h1>
+          <p style={{
+            fontSize: '1.25rem',
+            marginTop: '1rem'
+          }}>
+            by{' '}
+            <a 
+              href="https://truelight.tech/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{
+                color: '#DC143C',
+                textDecoration: 'none',
+                fontWeight: '600'
+              }}
+            >
+              https://truelight.tech/
+            </a>
+          </p>
+        </div>
       </body>
     </html>
   )
